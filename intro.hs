@@ -34,7 +34,10 @@ isPrime x = undefined
 {-
 - Calcula um termo da sequencia de Fibonnacci. Voce pode trabalhar com listas. 
 -}
-fib x = undefined
+fib 0 = 0
+fib 1 = 1
+fib 2 = 1
+fib x = fib (x-1) + fib (x-2)
 
 {-
 - Calcula um MDC de dois numeros usando o algoritmo de Euclides. 
